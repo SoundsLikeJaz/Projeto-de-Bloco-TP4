@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CardapioTest extends BaseTest {
+public class CardapioTestIT extends BaseTest {
     @Test
     void deveCadastrarItem() throws InterruptedException {
         CardapioPage cardapioPage = new CardapioPage(driver).abrir()

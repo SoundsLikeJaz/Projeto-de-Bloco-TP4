@@ -17,5 +17,8 @@ jobs:
           cache: 'maven'
           cache-dependency-path: 'cardapio-backend/pom.xml'
 
-      - name: Build with Maven
+      - name: Build e testes backend
         run: mvn -B package --file cardapio-backend/pom.xml
+
+      - name: Rodar Checkstyle
+        run: mvn checkstyle:check --file cardapio-backend/pom.xml

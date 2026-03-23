@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v6
       - uses: actions/setup-java@v5
         with:
-          distribution: 'correto'
+          distribution: 'corretto'
           java-version: '17'
           cache: 'maven'
           cache-dependency-path: 'cardapio-backend/pom.xml'
